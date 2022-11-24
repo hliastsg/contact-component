@@ -8,22 +8,6 @@ const Card = () => {
   const [contact, setContact] = useState({})
   const [isLoading, setIsLoading] = useState(false)
 
-  // useEffect(() => {
-  //   setIsLoading(true)
-  //   try {
-  //     axios.get('https://random-data-api.com/api/v2/users')
-  //     .then((res) => {
-  //       console.log(res.data);
-  //     if (res.data) {
-  //       setContact(res.data)
-  //       setIsLoading(false)
-  //     }
-  //     })
-  //   } catch (error) {
-  //     console.log(error);
-  //     setIsLoading(true)
-  //   }
-  // },[])
   useEffect(() => {
     setIsLoading(true)
     fetchData()
